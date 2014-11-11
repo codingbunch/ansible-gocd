@@ -12,4 +12,4 @@ ntp_server6: 1.uk.pool.ntp.org
 ntp_server7: ntp.ubuntu.com # fallback
 
 # GOCD
-gocd_version: 
+gocd_version: 14.3.0-1186

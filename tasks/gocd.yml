@@ -13,7 +13,7 @@
   tags: gocd
 
 - name: Enable gocd_server service
-  service: name=gocd_server enabled=yes status=started
+  service: name=go-server enabled=yes state=started
   register: gocd_install
   tags: gocd
 

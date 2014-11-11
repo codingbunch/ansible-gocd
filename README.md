@@ -71,6 +71,11 @@ ntp_server5: 0.uk.pool.ntp.org
 ntp_server6: 1.uk.pool.ntp.org
 ntp_server7: ntp.ubuntu.com # fallback
 
+# GOCD
+gocd_version: 14.3.0-1186
+
+```
+
 ### Run the playbook
 
 First create a playbook including the gocd role, naming it gocd.yml
