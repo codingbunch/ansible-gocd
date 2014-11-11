@@ -91,3 +91,4 @@ Use *ansible.host* as inventory. Run the playbook only for the remote host *gocd
 
 ```bash
 $ ansible-playbook -k -i ansible.host gocd.yml -u vagrant
+```
