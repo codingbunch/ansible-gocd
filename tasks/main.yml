@@ -1,0 +1,24 @@
+---
+# Add base packages
+
+- name: Update apt
+  apt: update_cache=yes cache_valid_time=3600
+  sudo: yes
+  tags: update
+
+- name: Upgrade OS
+  apt: upgrade=safe
+  sudo: yes
+  tags: update  
+
+- include: base.yml 
+  sudo: yes
+  tags: base
+
+- include: oraclejdk.yml
+  sudo: yes
+  tags: java
+
+- include: gocd.yml
+  sudo: yes
+  tags: gocd  

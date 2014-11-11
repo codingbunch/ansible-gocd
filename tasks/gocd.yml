@@ -1,0 +1,23 @@
+---
+# The playbook for GOCD tasks
+
+- name: Download GOCD Server
+  command: >
+    wget http://download.go.cd/gocd-deb/go-server-{{ gocd_version }}.deb 
+    chdir=/tmp 
+    creates=/tmp/go-server-{{ gocd_version }}.deb
+  tags: gocd
+
+- name: Install GOCD Server .deb package
+  apt: deb=/tmp/go-server-{{ gocd_version }}.deb
+  tags: gocd
+
+- name: Enable gocd_server service
+  service: name=gocd_server enabled=yes status=started
+  register: gocd_install
+  tags: gocd
+
+- name: Wait for GOCD Server startup
+  wait_for: port=8153 delay=15
+  when: gocd_install.changed
+  tags: gocd
