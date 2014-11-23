@@ -23,7 +23,8 @@ Use this role to install Go Continuous Delivery Server.
 $ git clone git@github.com:codingbunch/ansible-gocd.git
 ```
 
-The code should reside in the roles directory of ansible ( See [ansible documentation](http://docs.ansible.com/playbooks.html#roles) for more information on roles ), in a folder named gocd.
+The code should reside in the roles directory of ansible, in a folder named gocd.
+See [ansible documentation](http://docs.ansible.com/playbooks.html#roles) for more information on roles, 
 
 ### Create a host file
 
