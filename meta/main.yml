@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: aalda
-  description: An Ansible Role for installing GO Continuous Delivery Server
+  description:
   company: CodingBunch
   license: MIT
   min_ansible_version: 1.7
