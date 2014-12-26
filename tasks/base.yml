@@ -20,6 +20,7 @@
     - git
     - python-pip
     - unzip
+    - apache2-utils
   tags: base
 
 - name: Configure NTP in /etc/ntp.conf
